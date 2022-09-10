@@ -1,0 +1,11 @@
+[tool.mypy]
+disallow_incomplete_defs = true
+
+[tool.pytest.ini_options]
+minversion = 2.0
+python_files = ["test_*.py"]
+asyncio_mode = "auto"
+markers = [
+    #run integration tests
+    "integration",
+]
